@@ -1,0 +1,4 @@
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-location:before { content: '\f031'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
