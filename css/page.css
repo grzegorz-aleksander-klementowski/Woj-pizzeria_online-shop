@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+/*MENU*/
+
+    /*navbar-menu*/
+
+#order-collect-box
+{
+  width: 350px;
+  height: 180px;
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+  background-color: #222222;
+  color: white;
+  position: fixed;
+  top: 11%;
+  right: 0px;
+  z-index: 1000;
+  text-align: justify;
+  display: none;
+}
+
+#buy-now-text
+{
+  width: 50%;
+  float: left;
+}
+
+#buy-now-buttom
+{
+  float: right;
+  width: 40%;
+  font-weight: 700;
+}
+#scrollbox
+{
+  width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  height: 100%;
+}
+#scrollbox::-webkit-scrollbar
+{
+  display: none;
+}
+/*table-order*/
+#order-collect-box table
+{
+  width: 100%;
+}
+#order-collect-box caption
+{
+  caption-side: top;
+}
+#order-collect-box table td
+{
+  border-bottom: 1px dotted white;
+  padding-bottom: 7px;
+}
+
+#order-collect-box table .td3
+{
+  width: 50%;
+  text-align: right;
+}
+
+#order-collect-box table .td1
+{
+  font-weight: 600;
+}
+
+/*MENU-NAVBAR*/
+.navbar-menu
+{
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.navbar-menu ul
+{
+  list-style-type: none;
+  
+}
+
+.navbar-menu ul li
+{
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 40px;
+  border-bottom: 1px solid #656565;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-menu ul li:hover
+{
+    cursor: pointer;
+    border-bottom: 2px solid #909090;
+    font: 110% bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+      /*DISH*/
+.dish
+{
+  padding-bottom: 20px;
+  width: 100%;  
+  height: 520px;
+  margin-top: 40px;
+  overflow: hidden;
+  background-color: #232930;
+}
+
+.dish:hover
+{
+  background-color: #444a50;
+}
+
+.dish img
+{
+  transition: all 0.2s ease-in-out;
+}
+
+
+.dish h1
+{
+  font-size: 175%;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.dish p
+{
+  font-size: 90%;
+}
+
+.dish figure
+{
+  width: 100%;
+  height: auto;
+}
+
+.dish figure figcaption
+{
+  margin: 0 10% 0 10%;
+}
+
+.dish figure figcaption .dish-tab-header
+{
+  padding-top: 20px;
+}
+
+.dish figure figcaption .dish-tab-description
+{
+  border-top: solid 3px #dc3546;
+  padding-top: 20px;
+  min-height: auto;
+}
+
+.dish button
+{
+  padding: 10px;
+}
+
+.dish figure figcaption .dish-tab-button
+{
+  padding-top: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+}
+
+.menu-table tr
+{
+  text-align: center;
+}
+/*GALERIA*/
+
+
+.gallery-img
+{
+  width: 250px;
+  height: 200px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.overlay
+{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.overlay:hover
+{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.full-photo-link
+{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #dc3545;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  text-align: center;
+}
+
+.overlay:hover .full-photo-link
+{
+  opacity: 0.9;
+}
+.galery-icon
+{
+  display: block;
+  margin-top: 25%;
+  cursor: pointer;
+}
+.galery-icon p
+{
+  font-size: 125%;
+  cursor: pointer;
+}
+.galery-icon i
+{
+  font-size: 150%;
+  cursor: pointer;
+}
+.gallery-img img
+{
+  transition: 0.2s;
+}
+
+.gallery-img img:hover
+{
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+}
+
+
+#full-photo
+{
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+}
+
+#full-photo img
+{
+  width: 25%;
+  margin-top: 5%; 
+}
+
+#exit-img
+{
+  position: fixed;
+  z-index: 2000;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: #999;
+  font-size: 200%;
+  display: none;
+  cursor: pointer;
+  padding: 20px;
+}
+#exit-img:hover
+{
+  color: #fff;
+}
+/*KONTAKT*/
+.contact-baners
+{
+  font-size: 150%;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contact-baners button p
+{
+  cursor: pointer;
+}
+
+#map
+{
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+  margin-bottom: 15px;
+}
+/*MEDIA SCREEN*/
+
+@media screen and (max-width:990px)
+{
+  .navbar-menu ul li
+  {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 60px;
+    border-bottom: 1px solid #656565;
+    transition: all 0.2s ease-in-out;
+  }
+  .dish
+  {
+    padding-bottom: 20px;
+    width: 100%;  
+    height: 420px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  
+    .dish button
+  {
+    padding: 5px;
+  }
+  
+  .dish figure figcaption .dish-tab-button
+  {
+    padding-top: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+  }
+}
+@media screen and (max-width:575px)
+{
+  .dish button
+  {
+    padding: 35px;
+  }
+
+  .navbar-menu ul li
+  {
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 90px;
+    border-bottom: 1px solid #656565;
+    transition: all 0.2s ease-in-out;
+  }
+  .dish button
+  {
+    padding: 10px;
+  }
+  
+  .dish figure figcaption .dish-tab-button
+  {
+    padding-top: 20px;
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+  }
+  
+  .dish
+  {
+    padding-bottom: 20px;
+    width: 100%;  
+    min-height: 600px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+
+  .dish figure figcaption .dish-tab-description
+  {
+    border-top: solid 3px #dc3546;
+    padding-top: 20px;
+    height: auto;
+  }
+}
+@media screen and (max-width:430px)
+{
+  .navbar-menu ul li
+  {
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    border-bottom: 1px solid #656565;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+  }
+}
+/*GODZINY OTWARCIA*/
+
+#open-hours table
+{
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 6px #cd3545;
+  border-bottom: solid 6px #cd3545;
+}
+
+#open-hours table
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#open-hours table tr td
+{
+  width: 20%;
+  height: 60px;
+  font-weight: 700;
+  font-size: 140%;
+}
+
+#open-hours section
+{
+  margin-left: 5%;
+  cursor: pointer;
+}
