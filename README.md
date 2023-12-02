@@ -2,9 +2,42 @@
 Card shopping in written in PHP. Add to card and buy the product you want + System of couting. Adding new products in Data Bases add new product in a website. Easy to use for restaurant owners.
 There are still small staff to polish up. I made it to a local restaurant as they made best pizza on the world!
 
-# Inatalation
 
-Download or clone files into your server. There is implemented handing errors systems and in the case of now database SQL table, it will create one. 
+# Installation
+
+To get started, download or clone the files into your server. The system includes an implemented error handling system for robust performance.
+
+## Steps for Setup
+
+1. **Upload Files**: 
+   After downloading, upload the files to your server.
+
+2. **Database Configuration**: 
+   In the `connect.php` file, update the database credentials (database name, user, password) to match your server's database configuration.
+
+3. **Database Creation**: 
+   Next, you need to create a database and a table on your server. You can do this via your database server's console or any other preferred method. Here are the MySQL/MariaDB commands to set up your database:
+
+mysql -u root -p
+
+CREATE DATABASE menu;
+
+USE menu;
+
+CREATE TABLE dishes (
+id INT AUTO_INCREMENT PRIMARY KEY,
+type VARCHAR(50),
+name VARCHAR(255) NOT NULL,
+description TEXT,
+price_s DECIMAL(10, 2),
+price_l DECIMAL(10, 2)
+);
+
+EXIT;
+
+
+After these steps, your system should be ready to run. If you encounter any issues, refer to the error logs for troubleshooting.
+
 
 # Features
 
