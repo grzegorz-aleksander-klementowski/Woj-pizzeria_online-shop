@@ -10,10 +10,10 @@ To get started, download or clone the files into your server. The system include
 ## Steps for Setup
 
 1. **Upload Files**: 
-   After downloading, upload the files to your server.
+   After downloading, upload the files to your server. It do not need additional installation. Make sure PHP is installed on server. You will need to conficure 'connect.php'.
 
 2. **Database Configuration**: 
-   In the `connect.php` file, update the database credentials (database name, user, password) to match your server's database configuration.
+   In the `connect.php` file, update the database credentials (database name, user, password) to match your server's database configuration. It's written in traditional simple way, not comlicated. 
 
 3. **Database Creation**: 
    Next, you need to create a database and a table on your server. You can do this via your database server's console or any other preferred method. Here are the MySQL/MariaDB commands to set up your database:
